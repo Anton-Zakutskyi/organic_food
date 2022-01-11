@@ -5,12 +5,15 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
     <link rel="stylesheet" href="css/style.css">
     <title>Organic Food</title>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container">
+<nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container d-flex flex-wrap-reverse  py-lg-4">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -24,23 +27,29 @@
                     <a class="nav-link" href="#">Service</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link">Menu</a>
+                    <a class="nav-link" href="#">Menu</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link">Contact</a>
+                    <a class="nav-link" href="#">Contact</a>
                 </li>
             </ul>
-            <a class="navbar-brand" href="index.html">
+        </div>
+        <div class="collapse navbar-collapse d-flex justify-content-center">
+            <a class="navbar-brand me-0" href="index.html">
                 <img src="images/planet-earth.svg" alt="logo">
             </a>
-            <img src="images/Search.svg" alt="search" id="search_img">
+        </div>
+        <div class="collapse navbar-collapse d-flex justify-content-end d-none d-lg-block">
+            <a href="#">
+            <img class="nav-icon ps-lg-2 me-lg-5" src="images/Search.svg" alt="search" id="search_img">
+            </a>
             <form class="d-flex visually-hidden" id="search">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <!--                <button class="btn btn-outline-success" type="submit">Search</button>-->
             </form>
             <a href="#">
-                <img src="images/Buy.svg" alt="Basket">
+                <img class="nav-icon ps-lg-2 me-lg-5" src="images/Buy.svg" alt="Basket">
             </a>
+
             <!-- Button trigger modal -->
             <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" id="register">
                 Register Now
@@ -68,6 +77,59 @@
         </div>
     </div>
 </nav>
+
+<section class="veg_frt">
+    <div class="container text-center">
+        <h2>Organic Fruit & Vegetables</h2>
+        <p class="text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley...</p>
+        <a href="#">Order Now</a>
+        <div class="row align-items-center">
+
+        <div class="col-12 col-md-8 col-lg-9">
+            <img class="w-100" src="images/vegetables-fruits-bg-0.png" alt="vegetables-fruits">
+        </div>
+
+        <div class="col-12 col-md-4 col-lg-3 ">
+
+
+            <div class="d-flex justify-content-between align-items-center px-4 py-lg-3 mb-3 bg-white">
+                <div class="icon d-flex align-items-center justify-content-center">
+                    <img src="images/user.svg" alt="user">
+                </div>
+                <div class="details">
+                    <p>30K</p>
+                    <p>User Order</p>
+                </div>
+            </div>
+
+
+            <div class="d-flex justify-content-between align-items-center px-4 py-lg-3 mb-3 bg-white">
+                <div class="icon d-flex align-items-center justify-content-center">
+                    <img src="images/star.svg" alt="stars">
+                </div>
+                <div class="details">
+                    <p>20K</p>
+                    <p>Reviews(4.8)</p>
+                </div>
+            </div>
+
+
+            <div class="d-flex justify-content-between align-items-center px-4 py-lg-3 bg-white">
+                <div class="icon d-flex align-items-center justify-content-center">
+                    <img src="images/harvest.svg" alt="harvest">
+                </div>
+                <div class="details">
+                    <p>300</p>
+                    <p>Items</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+</section>
+
+
 
 <script src="js/bootstrap.js"></script>
 <script src="js/js.js"></script>
