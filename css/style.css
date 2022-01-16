@@ -1,5 +1,17 @@
 @import "bootstrap.min.css";
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Rosario:wght@700&display=swap");
+* {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #555555;
+}
+a:hover {
+  color: #09A66D;
+}
+
 .navbar-light .navbar-toggler {
   position: absolute;
   right: 20px;
@@ -26,6 +38,72 @@ p {
 #register {
   background-color: #09A66D;
   border-color: #09A66D;
+}
+
+.owl-carousel .owl-nav button.owl-prev {
+  display: inline-block;
+  width: 56px;
+  height: 56px;
+  background-color: white;
+  border-radius: 50%;
+  border: 1px solid #CCCCCC;
+  position: relative;
+  margin-right: 26px;
+  transition: 0.7s;
+}
+.owl-carousel .owl-nav button.owl-prev:before {
+  content: url("../images/arrow_prew.svg");
+  position: absolute;
+  top: 17px;
+  right: 22px;
+}
+.owl-carousel .owl-nav button.owl-prev:hover {
+  background-color: #09A66D;
+  transform: rotate(180deg);
+}
+.owl-carousel .owl-nav button.owl-prev:hover:before {
+  content: url("../images/arrow_active.svg");
+  position: absolute;
+  top: 20px;
+  left: 23px;
+}
+
+.owl-carousel .owl-nav button.owl-next {
+  display: inline-block;
+  width: 56px;
+  height: 56px;
+  background-color: white;
+  border-radius: 50%;
+  border: 1px solid #CCCCCC;
+  transform: rotate(180deg);
+  position: relative;
+  transition: 0.7s;
+}
+.owl-carousel .owl-nav button.owl-next:before {
+  content: url("../images/arrow_prew.svg");
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+.owl-carousel .owl-nav button.owl-next:hover {
+  background-color: #09A66D;
+  transform: none;
+}
+.owl-carousel .owl-nav button.owl-next:hover:before {
+  content: url("../images/arrow_active.svg");
+  position: absolute;
+  top: 17px;
+  left: 23px;
+}
+
+.owl-carousel.owl-loaded {
+  position: relative;
+}
+
+.owl-carousel .owl-nav {
+  position: absolute;
+  bottom: 10px;
+  left: 25%;
 }
 
 .veg_frt {
@@ -81,6 +159,206 @@ p {
 .veg_frt .details p:last-of-type {
   font-size: 18px;
   line-height: 30px;
+}
+
+.why_we {
+  padding: 140px 0 146px 0;
+}
+.why_we .img {
+  width: 100%;
+  max-width: 80px;
+  height: 80px;
+  background-color: #F3FBF8;
+  border-radius: 50%;
+  position: relative;
+}
+.why_we .small_icon {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.why_we .content p {
+  font-size: 14px;
+  line-height: 20px;
+}
+.why_we .why_item:hover {
+  background-color: #F3FBF8;
+  transition: top 0.7s;
+}
+.why_we .why_item:hover .img {
+  background-color: white;
+}
+
+.explore {
+  background-color: rgba(9, 166, 109, 0.05);
+  padding: 89px 0 143px 0;
+  background-image: url("../images/explore_fresh_melina_with-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom 0 right 50px;
+}
+.explore h2 {
+  padding-top: 30px;
+  margin-bottom: 20px;
+}
+.explore p {
+  margin-bottom: 50px;
+}
+.explore a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 30px;
+  color: #222222;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+}
+.explore a:after {
+  content: url("../images/arrow.svg");
+  text-align: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  line-height: 64px;
+  background-color: #09A66D;
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.customers_say h2 {
+  max-width: 640px;
+  top: 70px;
+  z-index: 3;
+}
+.customers_say .row {
+  padding-top: 136px;
+}
+.customers_say .rating .star {
+  width: 22px;
+  height: 22px;
+}
+.customers_say .customer_img .people_stars {
+  left: 0;
+  bottom: 10px;
+  padding: 11px 30px;
+  background-color: white;
+  border-radius: 20px;
+}
+
+.simple {
+  padding-top: 150px;
+}
+.simple .app_bg {
+  background-color: #F3FBF8;
+  background-repeat: no-repeat;
+  padding: 11px 24px;
+  display: inline-block;
+  border-radius: 50px;
+  margin-top: 35px;
+  margin-bottom: 16px;
+}
+.simple a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 18px;
+  color: #333333;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+  margin-right: 24px;
+}
+.simple h2 {
+  margin-bottom: 20px;
+}
+.simple p {
+  max-width: 575px;
+  margin-bottom: 50px;
+}
+
+footer {
+  padding-bottom: 118px;
+}
+footer .soc {
+  margin-right: 50px;
+}
+footer li {
+  margin-bottom: 24px;
+}
+footer h4 {
+  margin-bottom: 40px;
+}
+footer .navbar-brand img {
+  margin-bottom: 38px;
+}
+footer .row {
+  padding-top: 60px;
+}
+
+@media only screen and (max-width: 1320px) {
+  .customers_say h2 {
+    max-width: 640px;
+    top: 0;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  h2 {
+    font-size: 50px;
+    line-height: 70px;
+  }
+
+  .customers_say h2 {
+    max-width: 640px;
+    top: 20px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  h2 {
+    font-size: 50px;
+    line-height: 70px;
+  }
+
+  .customers_say h2 {
+    max-width: 640px;
+    top: 0;
+  }
+}
+@media only screen and (max-width: 767px) {
+  p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .customers_say h2 {
+    max-width: 640px;
+    top: 20px;
+    z-index: 3;
+    text-align: center;
+  }
+
+  .owl-carousel .owl-nav {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+  }
+}
+@media only screen and (max-width: 420px) {
+  h2 {
+    font-size: 35px;
+    line-height: 45px;
+  }
+
+  .customers_say h2 {
+    max-width: 350px;
+    top: 5px;
+    z-index: 3;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
