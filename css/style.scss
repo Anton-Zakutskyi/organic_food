@@ -7,10 +7,9 @@ $main_color: #F3FBF8;
 
 
 *{
-
   list-style: none;
-
 }
+
 a{
   text-decoration: none;
   color: #555555;
@@ -19,18 +18,16 @@ a{
     color: #09A66D;
   }
 }
+
 .navbar-brand{
   animation-duration: 3s;
   animation-name: pulsing;
   animation-iteration-count: infinite;
-
 }
 
 .navbar-light .navbar-nav .nav-link{
  &:hover{
-   color: #09A66D;
-
- }
+   color: #09A66D;}
 }
 
 .navbar-light .navbar-toggler{
@@ -195,13 +192,7 @@ p {
 }
 .why_we{
   padding: 140px 0 146px 0;
-  h2{
 
-  }
-
-  p{
-
-  }
   .img{
     width: 100%;
     max-width: 80px;
@@ -281,12 +272,6 @@ p {
   }
   .row{
     padding-top:136px;
-  }
-  .customer_text{
-
-    p{
-
-    }
   }
   .rating{
     .star{
