@@ -14,6 +14,7 @@ $main_color: #F3FBF8;
 a{
   text-decoration: none;
   color: #555555;
+  transition: 0.7s;
   &:hover{
     color: #09A66D;
   }
@@ -36,6 +37,7 @@ a{
   position: absolute;
   right: 20px;
 }
+
 h2 {
   font-family: $h2_font;
   font-weight: 700;
@@ -59,6 +61,11 @@ p {
 #register {
   background-color: #09A66D;
   border-color: #09A66D;
+  transition: 0.7s;
+  &:hover{
+    background-color: #F3FBF8;
+    color: #09A66D ;
+  }
 }
 
 

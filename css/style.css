@@ -7,6 +7,7 @@
 a {
   text-decoration: none;
   color: #555555;
+  transition: 0.7s;
 }
 a:hover {
   color: #09A66D;
@@ -51,6 +52,11 @@ p {
 #register {
   background-color: #09A66D;
   border-color: #09A66D;
+  transition: 0.7s;
+}
+#register:hover {
+  background-color: #F3FBF8;
+  color: #09A66D;
 }
 
 .owl-carousel .owl-nav button.owl-prev {
