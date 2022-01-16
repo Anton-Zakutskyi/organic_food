@@ -355,6 +355,14 @@ footer .row {
     max-width: 640px;
     top: 20px;
   }
+
+  .why_we {
+    padding: 100px 0 100px 0;
+  }
+
+  .simple {
+    padding-top: 120px;
+  }
 }
 @media only screen and (max-width: 992px) {
   p {
@@ -370,6 +378,14 @@ footer .row {
   .customers_say h2 {
     max-width: 640px;
     top: 0;
+  }
+
+  .why_we {
+    padding: 50px 0 50px 0;
+  }
+
+  .simple {
+    padding-top: 50px;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -390,6 +406,23 @@ footer .row {
     bottom: 10px;
     left: 50%;
   }
+
+  .why_we {
+    padding: 20px 0 20px 0;
+  }
+
+  .simple {
+    padding-top: 20px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .why_we {
+    padding: 20px 0 20px 0;
+  }
+
+  .simple {
+    padding-top: 20px;
+  }
 }
 @media only screen and (max-width: 420px) {
   h2 {
@@ -401,6 +434,32 @@ footer .row {
     max-width: 350px;
     top: 5px;
     z-index: 3;
+  }
+
+  .why_we {
+    padding: 20px 0 20px 0;
+  }
+
+  .simple {
+    padding-top: 20px;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .why_we {
+    padding: 10px 0;
+  }
+
+  .simple {
+    padding-top: 10px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .why_we {
+    padding: 10px 0 10px 0;
+  }
+
+  .simple {
+    padding-top: 10px;
   }
 }
 
